@@ -1,0 +1,13 @@
+.line {
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+    width: 45%;
+    border: 1px solid $blackColor;
+}
+
+.line-vertical {
+    display: inline;
+    border: 1px dashed $greyColor;
+    margin: 0 30px;
+}

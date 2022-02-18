@@ -1,0 +1,31 @@
+@import "_variables";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,body{
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  li {
+    list-style: none;
+  }
+}
+@import "_header";
+@import "_navbar";
+@import "_line";
+@import "_top-teachers";
+@import "_statistics";
+@import "_favorites";
+@import "_footer";
+@import "_popup1";
+@import "_popup2";
+@import "_media";

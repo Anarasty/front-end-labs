@@ -1,0 +1,61 @@
+.top-teachers {
+    width: 80%;
+    margin: 30px auto;
+
+    .teachers-title {
+        text-align: center;
+        font-size: 30px;
+        font-family: $primaryFont;
+    }
+
+    .sorter{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            font-family: $primaryFont;
+            margin: 40px auto;
+            form{
+                label{
+                    font-size: 20px;
+                    margin: 0 20px;
+                    color: $greyColor;
+                }
+                select{
+                    font-size: 17px;
+                    padding: 10px;
+                    border-radius: 3px;
+                }
+            }
+        }
+    .teachers-grid {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+
+        .grid-item {
+            text-align: center;
+            margin: 40px auto;
+            font-family: $primaryFont;
+            img{
+                width: 70%;
+                border-radius: 50%;
+                border: 5px solid rgb(255, 156, 173);
+                transition: all 0.5s ease;
+                &:hover{
+                    border-color: rgb(184, 56, 77);
+                }
+            }
+            h2 {
+                font-size: 30px;
+            }
+            h3 {
+                font-size: 20px;
+                color: $greyColor;
+                font-weight: 100;
+            }
+            h4 {
+                font-size: 15px;
+                font-weight: 100;
+            }
+        }
+    }
+}

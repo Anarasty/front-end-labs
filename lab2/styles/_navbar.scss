@@ -1,0 +1,26 @@
+nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 90px auto;
+
+    .nav-links {
+        font-family: $primaryFont;
+        ul{
+            display: flex;
+            li{
+                margin-right: 40px;
+                a{
+                    font-size: 30px;
+                    color: $orangeColor;
+                    font-weight: 600;
+                    transition: all 0.5s ease;
+                    &:hover{
+                        filter: brightness(80%);
+                    }
+                }
+            }
+        }
+    }
+}

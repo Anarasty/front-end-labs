@@ -1,0 +1,47 @@
+header {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 35px auto;
+
+  .logo {
+    font-size: 24px;
+    color: $whiteColor;
+    text-shadow: 1px 1px 1px $blackColor, -1px -1px 1px $redColor,
+      -1px 1px 1px $blackColor, 1px -1px 1px $redColor;
+    transition: all 0.5s ease;
+      &:hover {
+      text-shadow: 2px 2px 2px $blackColor, -2px -2px 2px $redColor,
+        -2px 2px 2px $blackColor, 2px -2px 2px $redColor;
+    }
+  }
+  .search-bar {
+    font-family: $primaryFont;
+
+    #searcher {
+      width: 290px;
+      font-family: $primaryFont;
+      font-size: 18px;
+      padding: 10px;
+      margin-right: 30px;
+      transition: all 0.5s ease;
+      &:hover{
+        width: 350px;
+      }
+    }
+
+    .search-btn {
+      color: $orangeColor;
+      font-size: 18px;
+      border: 1px solid;
+      padding: 12px 20px;
+      font-weight: 500;
+      transition: all 0.5s ease;
+      &:hover{
+        color: $whiteColor;
+        background-color: $orangeColor;
+      }
+    }
+  }
+}

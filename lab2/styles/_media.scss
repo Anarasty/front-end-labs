@@ -1,0 +1,277 @@
+@media only screen and (max-width: 1200px) {
+  nav {
+    .nav-links {
+      ul {
+        li {
+          margin-right: 20px;
+          a {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+    .add-teacher-btn {
+      .popup-shower {
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  header {
+    .logo {
+      font-size: 20px;
+    }
+    .search-bar {
+      #searcher {
+        width: 250px;
+        font-size: 15px;
+        margin-right: 20px;
+        &:hover {
+          width: 300px;
+        }
+      }
+      .search-btn {
+        font-size: 15px;
+      }
+    }
+  }
+  nav {
+    .nav-links {
+      ul {
+        li {
+          margin-right: 15px;
+          a {
+            font-size: 20px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+    .add-teacher-btn {
+      .popup-shower {
+        font-size: 20px;
+      }
+      .popup-content {
+        width: 500px;
+        height: 700px;
+        .popup-closer {
+            font-size: 40px;
+        }
+        h1{
+            font-size: 30px;
+            margin-bottom: 0;
+        }
+        form{
+            label{
+                font-size: 15px;
+                margin: 5px 0;
+            }
+            input, select,textarea{
+                padding: 5px;
+                font-size: 15px;
+            } 
+        }
+      }
+    }
+  }
+  .top-teachers {
+    .teachers-title {
+      font-size: 25px;
+    }
+    .sorter {
+      form {
+        label {
+          font-size: 15px;
+          margin: 0 10px;
+        }
+        select {
+          font-size: 13px;
+          padding: 5px;
+        }
+      }
+    }
+    .teachers-grid {
+      grid-template-columns: auto auto auto;
+      .grid-item {
+        h2 {
+          font-size: 20px;
+        }
+        h3 {
+          font-size: 15px;
+        }
+      }
+    }
+    .popup-wrapper2{
+        .popup-content2{
+            width: 700px;
+            height: 500px;
+            .popup-closer2{
+                font-size: 40px;
+            }
+            h1{
+                font-size: 30px;
+                margin-bottom: 10px;
+            }
+            .teacher-info{
+                .all-info{
+                    line-height: 40px;
+                    h2{
+                        font-size: 30px;
+                    }
+                    h3{
+                        font-size: 20px;
+                    }
+                    h4{
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+
+  }
+  .statistics{
+      .stat-title{
+        font-size: 25px;
+      }
+      .stat-data{
+          table{
+              thead{
+                  th{
+                      font-size: 20px;
+                      padding: 5px 0;
+                  }
+              }
+              tbody{
+                  td{
+                      padding: 5px;
+                  }
+              }
+          }
+      }
+  }
+  .favorites{
+    .favorites-title{
+        font-size: 25px;
+    }
+    .favorites-grid{
+        grid-template-columns: auto auto auto;
+        .grid-item{
+            h1 {
+                font-size: 20px;
+            }
+            h3{
+                font-size: 15px;
+            }
+            label{
+                font-size: 15px;
+            }
+        }
+    }
+  }
+  footer{
+      .footer-content{
+          font-size: 18px;
+          line-height: 25px;
+      }
+  }
+}
+
+@media only screen and (max-width: 768px){
+  header{
+    width: 90%;
+    .search-bar{
+      #searcher{
+        width: 230px;
+        padding: 5px;
+        margin-right: 10px;
+        &:hover{
+        width: 250px;
+      }
+      }
+      .search-btn{
+        padding: 10px 15px;
+        font-size: 14px;
+      }
+    }
+  }
+  nav{
+    width: 90%;
+    .nav-links{
+      ul{
+        li{
+          a{
+            font-size: 15px;
+            font-weight: 900;
+          }
+        }
+      }
+    }
+    .add-teacher-btn {
+      .popup-shower {
+        font-size: 15px;
+      }
+    }
+  }
+  .top-teachers {
+    width: 90%;
+    .sorter {
+      form {
+        label {
+          margin: 0 5px;
+        }
+        select {
+          padding: 3px;
+        }
+      }
+    }
+    .teachers-grid {
+      grid-template-columns: auto auto;
+    }
+    .popup-wrapper2{
+        .popup-content2{
+            width: 550px;
+            height: 500px;
+            .popup-closer2{
+                font-size: 30px;
+            }
+            h1{
+                font-size: 25px;
+                margin-bottom: 10px;
+            }
+            .teacher-info{
+                img{
+                      width: 250px;
+                    }
+                .all-info{
+                    line-height: 30px;
+                    h2{
+                        font-size: 30px;
+                    }
+                    h3{
+                        font-size: 20px;
+                    }
+                    h4{
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+  }
+  .favorites{
+    .favorites-title{
+        font-size: 25px;
+    }
+    .favorites-grid{
+        grid-template-columns: auto auto;
+    }
+  }
+  footer{
+      .footer-content{
+          font-size: 15px;
+      }
+  }
+}

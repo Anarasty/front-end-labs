@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/style.css">
+        <script src="https://kit.fontawesome.com/a7e9fb7651.js"
+            crossorigin="anonymous"></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <h1>Teachinder</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="searcher" placeholder="Name, note or age to search">
+                <a href="" class="search-btn">Search</a>
+            </div>
+        </header>
+        <nav>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#top-teachers">Teachers</a></li>
+                    <li><a href="#statistics">Statistics</a></li>
+                    <li><a href="#favorites">Favorites</a></li>
+                    <li><a href="#footer">About</a></li>
+                </ul>
+            </div>
+            <div class="add-teacher-btn">
+                <!-- <a href="">Add teacher</a> -->
+                <div class="popup-wrapper">
+                    <input type="checkbox" class="popup-checkbox"
+                        id="popupCheckboxOne">
+                    <div class="popup">
+                        <div class="popup-content">
+                            <label for="popupCheckboxOne" class="popup-closer">&#215;</label>
+                            <h1>Add teacher</h1>
+                            <form>
+                                <label for="name">Name</label>
+                                <input type="text" id="name" placeholder="Enter name">
+
+                                <label for="spec">Speciality</label>
+                                <select id="spec">
+                                    <option value="math">Math</option>
+                                    <option value="art">Art</option>
+                                    <option value="literature">Literature</option>
+                                    <option value="dataScience">Data Science</option>
+                                    <option value="history">History</option>
+                                    <option value="psychology">Psychology</option>
+                                    <option value="biology">Biology</option>
+                                    <option value="physics">Physics</option>
+                                </select>
+                                <div class="country-section">
+                                    <label for="countries">Country</label>
+                                    <select id="countries">
+                                        <option value="ukraine">Ukraine</option>
+                                        <option value="usa">USA</option>
+                                        <option value="brazil">Brazil</option>
+                                    </select>
+                                    <label for="cities">City</label>
+                                    <input type="text" id="cities"
+                                        placeholder="Enter city">
+                                </div>
+                                <div class="contact-section">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email"
+                                        placeholder="Enter email">
+                                    <label for="phonenumber">Phone</label>
+                                    <input type="tel" id="phonenumber"
+                                        placeholder="Enter phone">
+                                </div>
+                                <label for="birthday">Date of birth</label>
+                                <input type="date" id="birthday">
+                                <label>Gender</label>
+                                <div class="gender-section">
+                                    <label for="male">Male</label>
+                                    <input type="radio" name="genders"
+                                        id="male">
+                                    <label for="female">Female</label>
+                                    <input type="radio" name="genders"
+                                        id="female">
+                                </div>
+                                <label for="bgcolor">Background color</label>
+                                <input type="color" id="bgcolor">
+                                <label for="comment">Notes(optional)</label>
+                                <textarea id="comment" cols="30" rows="5"
+                                    placeholder="Some information..."></textarea>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <label for="popupCheckboxOne" class="popup-shower">Add teacher</label>
+            </div>
+        </nav>
+        <div class="line"></div>
+        <section class="top-teachers" id="top-teachers">
+            <div class="teachers-title">
+                <h1>Top Teachers</h1>
+            </div>
+            <div class="sorter">
+                <form>
+                    <label for="ages">Age:</label>
+                    <select id="ages">
+                        <option value="young">18-31</option>
+                        <option value="middleaged">32-50</option>
+                        <option value="elder">51-65</option>
+                    </select>
+
+                    <div class="line-vertical"></div>
+
+                    <label for="regions">Region:</label>
+                    <select id="regions">
+                        <option value="europe">Europe</option>
+                        <option value="africa">Africa</option>
+                        <option value="america">America</option>
+                    </select>
+
+                    <div class="line-vertical"></div>
+
+                    <label for="genders">Gender</label>
+                    <select id="genders">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </form>
+            </div>
+
+            <!-- POPUP2 -->
+            <div class="popup-wrapper2">
+                <input type="checkbox" class="popup-checkbox2"
+                    id="popupCheckboxTwo">
+                <div class="popup2">
+                    <div class="popup-content2">
+                        <label for="popupCheckboxTwo" class="popup-closer2">&#215;</label>
+                        <h1>Teacher info</h1>
+                        <div class="teacher-info">
+                            <img src="assets/teacher1.png" alt="1">
+                            <div class="all-info">
+                                <h2>Ivan Buryatov</h2>
+                                <h3>Math</h3>
+                                <h4>Kiev, Ukraine</h4>
+                                <h4>22, Male</h4>
+                                <h4><a href="mailto:ivan_buryatov@gmail.com">ivan_buryatov@gmail.com</a></h4>
+                                <h4>+123456789</h4>
+                            </div>
+                        </div>
+                        <div class="teacher-comment">
+                            <p>Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Quam, est eos dignissimos sunt
+                                molestiae omnis dicta fuga adipisci quasi
+                                accusantium unde rerum culpa voluptate eveniet
+                                facilis quidem quis eius. Porro?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- POPUP 2 -->
+
+            <div class="teachers-grid">
+                <div class="grid-item">
+                    <a href=""><img src="assets/teacher1.png" alt="1"></a>
+                    <h2>Ivan Buryatov</h2>
+                    <h3>Math</h3>
+                    <h4>Ukraine</h4>
+                    <label for="popupCheckboxTwo" class="popup-shower2">See informaion</label>
+                </div>
+                <div class="grid-item">
+                    <a href=""><img src="assets/teacher2.png" alt="2"></a>
+                    <h2>Marta Greyhead</h2>
+                    <h3>Art</h3>
+                    <h4>USA</h4>
+                    <label for="popupCheckboxTwo" class="popup-shower2">See informaion</label>
+                </div>
+                <div class="grid-item">
+                    <a href=""><img src="assets/teacher3.png" alt="3"></a>
+                    <h2>Anna Simons</h2>
+                    <h3>Literature</h3>
+                    <h4>Brazil</h4>
+                    <label for="popupCheckboxTwo" class="popup-shower2">See informaion</label>
+                </div>
+                <div class="grid-item">
+                    <a href=""><img src="assets/teacher4.png" alt="4"></a>
+                    <h2>Sergey Lavinov</h2>
+                    <h3>Data Science</h3>
+                    <h4>Ukraine</h4>
+                    <label for="popupCheckboxTwo" class="popup-shower2">See informaion</label>
+                </div>
+                <div class="grid-item">
+                    <a href=""><img src="assets/teacher5.png" alt="5"></a>
+                    <h2>Lina Gamile</h2>
+                    <h3>History</h3>
+                    <h4>Brazil</h4>
+                    <label for="popupCheckboxTwo" class="popup-shower2">See informaion</label>
+                </div>
+                <div class="grid-item">
+                    <a href=""><img src="assets/teacher6.png" alt="6"></a>
+                    <h2>Nada Pomez</h2>
+                    <h3>Psychology </h3>
+                    <h4>Brazil</h4>
+                    <label for="popupCheckboxTwo" class="popup-shower2">See informaion</label>
+                </div>
+                <div class="grid-item">
+                    <a href=""><img src="assets/teacher7.png" alt="7"></a>
+                    <h2>Dana Supreme</h2>
+                    <h3>Biology</h3>
+                    <h4>USA</h4>
+                    <label for="popupCheckboxTwo" class="popup-shower2">See informaion</label>
+                </div>
+                <div class="grid-item">
+                    <a href=""><img src="assets/teacher8.png" alt="8"></a>
+                    <h2>Ronaldo Swift</h2>
+                    <h3>Physics</h3>
+                    <h4>USA</h4>
+                    <label for="popupCheckboxTwo" class="popup-shower2">See informaion</label>
+                </div>
+            </div>
+        </section>
+        <div class="line"></div>
+        <section class="statistics" id="statistics">
+            <div class="stat-title">
+                <h1>Statistics</h1>
+            </div>
+            <div class="stat-data">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Speciality</th>
+                            <th>Age</th>
+                            <th>Gender</th>
+                            <th>Nationality</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ivan Buryatov</td>
+                            <td>Math</td>
+                            <td>22</td>
+                            <td>Male</td>
+                            <td>Ukraine</td>
+                        </tr>
+                        <tr>
+                            <td>Marta Greyhead</td>
+                            <td>Art</td>
+                            <td>25</td>
+                            <td>Female</td>
+                            <td>USA</td>
+                        </tr>
+                        <tr>
+                            <td>Anna Simons</td>
+                            <td>Literature</td>
+                            <td>19</td>
+                            <td>Female</td>
+                            <td>Brazil</td>
+                        </tr>
+                        <tr>
+                            <td>Sergey Lavinov</td>
+                            <td>Data Science</td>
+                            <td>55</td>
+                            <td>Male</td>
+                            <td>Ukraine</td>
+                        </tr>
+                        <tr>
+                            <td>Lina Gamile</td>
+                            <td>History</td>
+                            <td>45</td>
+                            <td>Female</td>
+                            <td>Brazil</td>
+                        </tr>
+                        <tr>
+                            <td>Nada Pomez</td>
+                            <td>Psychology</td>
+                            <td>41</td>
+                            <td>Female</td>
+                            <td>Brazil</td>
+                        </tr>
+                        <tr>
+                            <td>Dana Supreme</td>
+                            <td>Biology</td>
+                            <td>62</td>
+                            <td>Female</td>
+                            <td>USA</td>
+                        </tr>
+                        <tr>
+                            <td>Ronaldo Swift</td>
+                            <td>Physics</td>
+                            <td>30</td>
+                            <td>Male</td>
+                            <td>USA</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="pagination">
+                <a href="" class="active">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+                <a href="">...</a>
+                <a href="">Last</a>
+            </div>
+        </section>
+        <div class="line"></div>
+        <section class="favorites" id="favorites">
+            <div class="favorites-title">
+                <h1>Favorites</h1>
+            </div>
+            <div class="favorites-grid">
+                <div class="grid-item">
+                    <img src="assets/teacher1.png" alt="1">
+                    <h1>Ivan Buryatov</h1>
+                    <h3>Ukraine</h3>
+                    <label for="popupCheckboxTwo" class="popup-shower2">See informaion</label>
+                </div>
+                <div class="grid-item">
+                    <img src="assets/teacher2.png" alt="2">
+                    <h1>Marta Greyhead</h1>
+                    <h3>USA</h3>
+                    <label for="popupCheckboxTwo" class="popup-shower2">See informaion</label>
+                </div>
+                <div class="grid-item">
+                    <img src="assets/teacher3.png" alt="3">
+                    <h1>Anna Simons</h1>
+                    <h3>Brazil</h3>
+                    <label for="popupCheckboxTwo" class="popup-shower2">See informaion</label>
+                </div>
+                <div class="grid-item">
+                    <img src="assets/teacher4.png" alt="4">
+                    <h1>Sergey Lavinov</h1>
+                    <h3>Ukraine</h3>
+                    <label for="popupCheckboxTwo" class="popup-shower2">See informaion</label>
+                </div>
+                <div class="grid-item">
+                    <img src="assets/teacher5.png" alt="5">
+                    <h1>Lina Gamile</h1>
+                    <h3>Brazil</h3>
+                    <label for="popupCheckboxTwo" class="popup-shower2">See informaion</label>
+                </div>
+            </div>
+        </section>
+        <div class="line"></div>
+        <footer id="footer">
+            <div class="footer-content">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Eaque ipsam excepturi hic. Dolorum expedita non voluptates.
+                    Excepturi fugiat enim voluptatibus magni esse quibusdam
+                    autem modi sit laborum adipisci? Repudiandae, error?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Dolor, quo?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Dignissimos voluptatem animi, eos saepe doloremque nulla
+                    sunt numquam rerum earum impedit reprehenderit dolor iusto
+                    eaque, vel inventore molestiae odio quam accusantium veniam
+                    ea fuga quae? Eius atque nisi nam neque fuga. Ducimus,
+                    repellat. Maiores tempore molestias, labore sequi aliquam
+                    similique perspiciatis suscipit porro natus, odio aperiam
+                    eum sapiente? Dignissimos, cumque minima?</p>
+            </div>
+
+        </footer>
+        <nav>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#top-teachers">Teachers</a></li>
+                    <li><a href="#statistics">Statistics</a></li>
+                    <li><a href="#favorites">Favorites</a></li>
+                    <li><a href="#footer">About</a></li>
+                </ul>
+            </div>
+            <div class="add-teacher-btn">
+                <!-- <a href="">Add teacher</a> -->
+                <div class="popup-wrapper">
+                    <input type="checkbox" class="popup-checkbox"
+                        id="popupCheckboxOne">
+                    <div class="popup">
+                        <div class="popup-content">
+                            <label for="popupCheckboxOne" class="popup-closer">&#215;</label>
+                            <h1>Add teacher</h1>
+                            <form>
+                                <label for="name">Name</label>
+                                <input type="text" id="name" placeholder="Enter
+                                    name">
+
+                                <label for="spec">Speciality</label>
+                                <select id="spec">
+                                    <option value="math">Math</option>
+                                    <option value="art">Art</option>
+                                    <option value="literature">Literature</option>
+                                    <option value="dataScience">Data Science</option>
+                                    <option value="history">History</option>
+                                    <option value="psychology">Psychology</option>
+                                    <option value="biology">Biology</option>
+                                    <option value="physics">Physics</option>
+                                </select>
+                                <div class="country-section">
+                                    <label for="countries">Country</label>
+                                    <select id="countries">
+                                        <option value="ukraine">Ukraine</option>
+                                        <option value="usa">USA</option>
+                                        <option value="brazil">Brazil</option>
+                                    </select>
+                                    <label for="cities">City</label>
+                                    <input type="text" id="cities"
+                                        placeholder="Enter city">
+                                </div>
+                                <div class="contact-section">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email"
+                                        placeholder="Enter email">
+                                    <label for="phonenumber">Phone</label>
+                                    <input type="tel" id="phonenumber"
+                                        placeholder="Enter phone">
+                                </div>
+                                <label for="birthday">Date of birth</label>
+                                <input type="date" id="birthday">
+                                <label>Gender</label>
+                                <div class="gender-section">
+                                    <label for="male">Male</label>
+                                    <input type="radio" name="genders"
+                                        id="male">
+                                    <label for="female">Female</label>
+                                    <input type="radio" name="genders"
+                                        id="female">
+                                </div>
+                                <label for="bgcolor">Background color</label>
+                                <input type="color" id="bgcolor">
+                                <label for="comment">Notes(optional)</label>
+                                <textarea id="comment" cols="30" rows="5"
+                                    placeholder="Some information..."></textarea>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <label for="popupCheckboxOne" class="popup-shower">Add teacher</label>
+            </div>
+        </nav>
+    </body>
+</html>

@@ -1,0 +1,107 @@
+.popup-wrapper2 {
+  .popup-checkbox2,
+  .popup2 {
+    display: none;
+  }
+  .popup-checkbox2:checked + .popup2 {
+    opacity: 1;
+    display: block;
+  }
+  .popup2 {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+
+    &:before {
+      display: block;
+      content: " ";
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: $blackColor;
+      opacity: 0.5;
+    }
+    .popup-content2 {
+      width: 900px;
+      height: 600px;
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      background-color: $whiteColor;
+      border-radius: 10px;
+      box-shadow: 0 0 20px $blackColor;
+      font-family: $primaryFont;
+
+      .popup-closer2 {
+        position: absolute;
+        top: 15px;
+        right: 40px;
+        color: $whiteColor;
+        font-size: 50px;
+        font-weight: 900;
+        display: block;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        &:hover {
+          transform: scale(1.3);
+        }
+      }
+      h1 {
+        font-size: 40px;
+        margin-bottom: 40px;
+        background-color: $greyColor;
+        color: $whiteColor;
+        padding: 20px;
+      }
+      .teacher-info {
+        display: flex;
+        align-items: center;
+        width: 80%;
+        margin: 0 20px;
+        .all-info {
+          margin: 10px 20px;
+          line-height: 50px;
+          h2 {
+            font-size: 40px;
+            font-weight: 400;
+          }
+          h3{
+            font-size: 25px;
+            font-weight: 900;
+          }
+          h4{
+            font-size: 16px;
+            font-weight: 100;
+          }
+        }
+      }
+      .teacher-comment{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        margin: 20px;
+      }
+    }
+  }
+}
+.popup-shower2 {
+  font-family: $primaryFont;
+  font-size: 15px;
+  font-weight: 900;
+  transition: all 0.5s ease;
+  border-bottom: 2px solid;
+}

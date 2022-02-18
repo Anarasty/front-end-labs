@@ -1,0 +1,64 @@
+.statistics {
+  width: 80%;
+  margin: 30px auto;
+
+  .stat-title {
+    text-align: center;
+    font-size: 30px;
+    font-family: $primaryFont;
+  }
+
+  .stat-data {
+    table {
+      width: 100%;
+      margin: 30px auto;
+      border-collapse: collapse;
+      font-family: $primaryFont;
+      thead,
+      th {
+        border-bottom: 1px solid $blackColor;
+
+        th {
+          font-size: 25px;
+          padding: 10px 0;
+          &::after {
+            content: "";
+            width: 0%;
+            height: 2px;
+            background: $blackColor;
+            display: block;
+            margin: auto;
+            transition: all 0.5s ease;
+          }
+          &:hover {
+            background-color: #f0f0f0;
+          }
+          &:hover::after{
+              width: 100%;
+          }
+        }
+      }
+      tbody {
+        text-align: center;
+
+        tr:nth-child(even) {
+          background-color: #feeaff;
+        }
+
+        td {
+          padding: 10px;
+        }
+      }
+    }
+  }
+  .pagination {
+    font-family: $primaryFont;
+    a {
+      color: rgb(139, 162, 182);
+      margin: 0 10px;
+    }
+    .active {
+      color: $blackColor;
+    }
+  }
+}

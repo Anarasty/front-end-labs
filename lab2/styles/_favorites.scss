@@ -1,0 +1,38 @@
+.favorites {
+    width: 80%;
+    margin: 30px auto;
+
+    .favorites-title{
+        text-align: center;
+        font-size: 30px;
+        font-family: $primaryFont;
+    }
+
+    .favorites-grid{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        .grid-item{
+            text-align: center;
+            margin: 40px auto;
+            font-family: $primaryFont;
+            img{
+                width: 70%;
+                border-radius: 50%;
+                border: 5px solid rgb(255, 156, 173);
+                transition: all 0.5s ease;
+                &:hover{
+                    border-color: rgb(184, 56, 77);
+                }
+            }
+            h1 {
+                font-size: 30px;
+            }
+            h3 {
+                font-size: 20px;
+                font-weight: 100;
+            }
+        }
+        
+    }
+
+}
