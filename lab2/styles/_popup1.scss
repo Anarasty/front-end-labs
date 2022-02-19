@@ -65,7 +65,7 @@
     }
     h1{
         font-size: 40px;
-        margin-bottom: 40px;
+        margin-bottom: 10px;
         background-color: $greyColor;
         color: $whiteColor;
         padding: 20px;
@@ -119,6 +119,13 @@
             resize: none;
             padding: 8px;
             font-size: 18px;
+        }
+        input[type=submit]{
+          margin-top: 20px;
+          padding: 5px;
+          border: 1px solid $orangeColor;
+          background-color: $whiteColor;
+          color: $orangeColor;
         }
     }
   }

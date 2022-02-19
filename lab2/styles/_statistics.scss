@@ -20,21 +20,31 @@
 
         th {
           font-size: 25px;
-          padding: 10px 0;
-          &::after {
-            content: "";
-            width: 0%;
-            height: 2px;
-            background: $blackColor;
-            display: block;
-            margin: auto;
-            transition: all 0.5s ease;
+          padding: 6px 0;
+          &::after{
+            content: url("/lab2/assets/arrow-down-solid.svg");
+            width: 1%;
+            display: none;
+            position: absolute;
+            
           }
+          // &::after {
+          //   content: "";
+          //   width: 0%;
+          //   height: 2px;
+          //   background: $blackColor;
+          //   display: block;
+          //   margin: auto;
+          //   transition: all 0.5s ease;
+          // }
           &:hover {
             background-color: #f0f0f0;
+            border-bottom: 2px solid;
           }
           &:hover::after{
-              width: 100%;
+              // width: 100%;
+              display: inline;
+              margin: 6px 10px;
           }
         }
       }
